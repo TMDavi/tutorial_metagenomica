@@ -61,18 +61,18 @@
 
 3) Remover arquivos temporários dentro da pasta de resultados
 
-        rm *_rgi.seqs.temp.txt
-        rm *_rgi.sorted.*.bam
-        rm *_rgi.temp.bam
-        rm *_rgi.temp.sam
+        rm *.seqs.temp.txt
+        rm *.sorted.*.bam
+        rm *.temp.bam
+        rm *.temp.sam
         rm *.gz
-        rm *_rgi.temp.sam.temp*
-        rm *_rgi.coverage.temp.txt
-        rm *_rgi.model_species_data_type.temp.txt
-        rm *_rgi.sorted.*.bam.bai
-        rm *_rgi.coverage_all_positions.temp.txt
-        rm *_rgi.allele_mapping_data.json
-        rm *_rgi.temp.txt
+        rm *.temp.sam.temp*
+        rm *.coverage.temp.txt
+        rm *.model_species_data_type.temp.txt
+        rm *.sorted.*.bam.bai
+        rm *.coverage_all_positions.temp.txt
+        rm *.allele_mapping_data.json
+        rm *.temp.txt
 
 4) Posteriormente deve-se utilizar as tabelas de gene_mapping ou de allele mapping e filtrados os genes com pelo menos 70% de cobertura
 
