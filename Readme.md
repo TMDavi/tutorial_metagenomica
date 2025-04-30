@@ -4,11 +4,12 @@
 
         #!/bin/bash
         directory='/path/to/file'
+        results='path'
 
         for file in ${directory}/*R1.fastq.gz
             do
             prefix=`basename $file R1.fastq.gz`
-            kraken2 --db /MP_Data/database/kraken2/last_release --paired $file $directory/${prefix}R2.fastq.gz --report /MP_Data/rommel/sectet/raw/maraba/kraken_test/${prefix}report.txt --use-mpa-style --threads 30
+            kraken2 --db /MP_Data/database/kraken2/last_release --paired $file $directory/${prefix}R2.fastq.gz --report ${results}/${prefix}report.txt --use-mpa-style --threads 30
             done
 
 #### Convert kreport to mpa using Kraken Tools
