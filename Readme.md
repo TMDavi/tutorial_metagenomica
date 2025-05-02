@@ -29,6 +29,14 @@
 - use the script kraken2micro available at https://github.com/labgm/kraken2micro.git
 
         python kraken2micro.py --rank 'S' --organism 'Bacteria' --files file1_mpa.txt file2_mpa.txt file3_mpa.txt ...
+#### Example metadata file microbiome analyst
+        #NAME SampleType
+        sample_01_report.mpa	case
+        sample_02_report.mpa	case
+        sample_03_report.mpa	case
+        sample_04_report.mpa	control
+        sample_05_report.mpa	control
+        sample_06_report.mpa	control
 
 ## Resistance analysis
 
