@@ -48,7 +48,8 @@
         
         for sample in ${directory}/*_1.fq.gz
         do
-            name=`basename ${sample} _1.fq.gz`nextflow run /usr/local/AMRplusplus/main_AMR++.nf -profile local --pipeline resistome --reads "${directory}/${name}_{1,2}.fq.gz" --output "${results}/${name}" --threads 40 
+            name=`basename ${sample} _1.fq.gz`
+            nextflow run /usr/local/AMRplusplus/main_AMR++.nf -profile local --pipeline resistome --reads "${directory}/${name}_{1,2}.fq.gz" --output "${results}/${name}" --threads 40 
         done
 ### CARD RGI
 1) Ativar ambiente RGI 
