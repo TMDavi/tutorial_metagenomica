@@ -95,6 +95,9 @@
         emapper.py --data_dir /MP_Data/database/eggnog/ --cpu 40 --itype metagenome --genepred prodigal -i sample.fa -o Results_dir
 - Só funciona com os contigs ou seja é necessário etapa de montagem anteriormente
 
+## Montagem megahit
+
+        megahit -f -1 {input[0]} -2 {input[1]} -t {threads} --presets meta-large -o {params.output} --min-contig-len 300
 
 
 
